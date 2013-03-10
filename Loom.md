@@ -128,7 +128,7 @@ Your LoomScript code goes here.
 
 > `main.ls` should not be messed with at the beginnnig.
 
-### Running the game
+### Running the game for development
 
     loom run
     
@@ -150,7 +150,7 @@ When creating a new Loom project with `loom new [name]`, it generates a `.gitign
     git add .
     git commit -m "New game project"
 
-## Building/Packaging
+## Building/Packaging to share
 
 ### OS X
 
