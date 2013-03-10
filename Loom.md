@@ -98,7 +98,11 @@ Contains all your images, sounds, maps etc. Almost anything that is not code but
 
 #### bin
 
-Here you will put scripts and binaries that handle stuff that `loom` does not care about. For example a script to add your company's badge to the iOS icon prior to building the iOS app would fit nicely here.
+After `loom run` or `loom build [platform]` this will contain a `Main.loom` binary which is the compiled Loom SDK.
+
+#### build
+
+*Not present at first.* This will contain packaged applications for the various platforms built with `loom build [platform]`.
 
 #### icons
 
@@ -109,6 +113,10 @@ These are the application icons that `loom build` will use for the various platf
 A good place to store external libraries. This might be code that you are not developing within this project like a proprietary physics engine or a even your own custom audio engine.
 
 > These would be like gems for Ruby.
+
+#### logs
+
+*Not present at first.* This will contain logs, generated when you run the game with `loom run`.
 
 #### loom.config
 
