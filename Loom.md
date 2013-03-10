@@ -133,6 +133,12 @@ Your LoomScript code goes here.
     loom run
     
 Yeap, that's it. `loom` will take care of downloading the SDK version (if it hasn't already done so) and build a fresh new binary to run. It will also boot up the *asset agent* have the binary connect to it for live reloading of assets.
+
+### Quitting the game
+
+By hitting ⌘Q you would expect the game to quit. If you run it from the packaged library (in `build/`) it will quit but if you run it with `loom run` it won't. To do that, you will have to hit ^C in the console.
+
+> ⌘ is the command key, ^ is the control key.
         
 ## Version control
 
