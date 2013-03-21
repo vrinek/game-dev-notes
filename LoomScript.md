@@ -2,7 +2,7 @@
 
 ## Loading and displaying a 2D sprite
 
-```
+```as3
 var sprite = CCSprite.createFromFile("assets/logo.png");
 sprite.x = 240;
 sprite.y = 120;
@@ -11,7 +11,7 @@ layer.addChild(sprite);
 
 ## Displaying a label (text)
 
-```
+```as3
 var label = new Label("assets/Curse-hd.fnt");
 label.text = "Hello Tween!";
 label.x = 240;
@@ -23,7 +23,7 @@ layer.addChild(label);
 
 > **Tween.to** (target:Object, duration:Number, params:Dictionary \<String Object\>)
 
-```
+```as3
 // Moving fast to a new position
 Tween.to(sprite, 0.3, {"x": x, "y": y});
 
@@ -44,7 +44,7 @@ Tween.to(sprite, 0.3, {"x": x, "y": y})
 
 Persistency is provided by Cocos2d-x and more specifically `CCUserDefault`.
 
-```
+```as3
 var userDefaults = CCUserDefault.sharedUserDefault();
 userDefaults.setIntegerForKey("polyX", x);
 sprite.x = userDefaults.getIntegerForKey("polyX", 240);
